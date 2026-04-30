@@ -5,7 +5,7 @@ description: Create exercise directory structures with sections, problems, solut
 
 # Scaffold Exercises
 
-Create exercise directory structures that pass `pnpm ai-hero-cli internal lint`, then commit with `git commit`.
+Create exercise directory structures that pass `pnpm ai-hero-cli internal lint`. Commit only if the user explicitly asked for a commit.
 
 ## Directory naming
 
@@ -48,6 +48,7 @@ If the subfolder has code, it also needs a `main.ts` (>1 line). But for stubs, a
 3. **Create stub readmes** - one `readme.md` per variant folder with a title
 4. **Run lint** - `pnpm ai-hero-cli internal lint` to validate
 5. **Fix any errors** - iterate until lint passes
+6. **Commit only if requested** - otherwise leave the verified changes in the working tree
 
 ## Lint rules summary
 

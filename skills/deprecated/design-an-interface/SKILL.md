@@ -21,22 +21,22 @@ Before designing, understand:
 
 Ask: "What does this module need to do? Who will use it?"
 
-### 2. Generate Designs (Parallel Sub-Agents)
+### 2. Generate Designs
 
-Spawn 3+ sub-agents simultaneously using Task tool. Each must produce a **radically different** approach.
+Produce 3+ radically different approaches. In Codex, use parallel subagents only when the user or environment explicitly permits subagent work; otherwise generate the designs yourself and keep each approach clearly separated.
 
 ```
-Prompt template for each sub-agent:
+Prompt template for each design:
 
 Design an interface for: [module description]
 
 Requirements: [gathered requirements]
 
 Constraints for this design: [assign a different constraint to each agent]
-- Agent 1: "Minimize method count - aim for 1-3 methods max"
-- Agent 2: "Maximize flexibility - support many use cases"
-- Agent 3: "Optimize for the most common case"
-- Agent 4: "Take inspiration from [specific paradigm/library]"
+- Design 1: "Minimize method count - aim for 1-3 methods max"
+- Design 2: "Maximize flexibility - support many use cases"
+- Design 3: "Optimize for the most common case"
+- Design 4: "Take inspiration from [specific paradigm/library]"
 
 Output format:
 1. Interface signature (types/methods)

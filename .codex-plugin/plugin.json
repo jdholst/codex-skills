@@ -1,0 +1,40 @@
+{
+  "name": "mattpocock-skills",
+  "version": "1.0.0",
+  "description": "Practical engineering and productivity skills adapted for Codex.",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://www.aihero.dev/"
+  },
+  "homepage": "https://www.aihero.dev/s/skills-newsletter",
+  "repository": "https://github.com/jdholst/codex-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "engineering",
+    "productivity",
+    "tdd",
+    "triage"
+  ],
+  "skills": "./.agents/skills/",
+  "interface": {
+    "displayName": "Matt Pocock Skills",
+    "shortDescription": "Small, composable skills for real engineering work",
+    "longDescription": "A Codex-ready bundle of practical skills for TDD, diagnosis, triage, PRDs, issue breakdowns, architecture review, grilling sessions, and a few focused workflow tools.",
+    "developerName": "Matt Pocock",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://www.aihero.dev/",
+    "defaultPrompt": [
+      "Use $tdd to build this change test-first",
+      "Use $diagnose to debug this failure",
+      "Use $grill-with-docs to stress-test this plan"
+    ],
+    "brandColor": "#111827",
+    "screenshots": []
+  }
+}

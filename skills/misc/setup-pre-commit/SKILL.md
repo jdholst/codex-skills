@@ -26,6 +26,8 @@ Install as devDependencies:
 husky lint-staged prettier
 ```
 
+Request approval if the environment requires network permission for dependency installation.
+
 ### 3. Initialize Husky
 
 ```bash
@@ -78,11 +80,11 @@ Only create if no Prettier config exists. Use these defaults:
 - [ ] `prettier` config exists
 - [ ] Run `npx lint-staged` to verify it works
 
-### 8. Commit
+### 8. Commit only if requested
 
-Stage all changed/created files and commit with message: `Add pre-commit hooks (husky + lint-staged + prettier)`
+If the user explicitly asked for a commit, stage all changed/created files and commit with message: `Add pre-commit hooks (husky + lint-staged + prettier)`.
 
-This will run through the new pre-commit hooks — a good smoke test that everything works.
+This will run through the new pre-commit hooks — a good smoke test that everything works. If the user did not ask for a commit, leave the verified changes in the working tree.
 
 ## Notes
 

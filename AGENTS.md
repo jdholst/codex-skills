@@ -1,6 +1,3 @@
-This repo is Codex-first. `AGENTS.md` is the canonical instruction file; keep
-this file as a compatibility pointer for agents that still read `CLAUDE.md`.
-
 Skills are organized into bucket folders under `skills/`:
 
 - `engineering/` — daily code work

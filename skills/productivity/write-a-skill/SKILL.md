@@ -1,6 +1,6 @@
 ---
 name: write-a-skill
-description: Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.
+description: Create new Codex skills with proper structure, progressive disclosure, metadata, and bundled resources. Use when user wants to create, write, update, or build a new skill.
 ---
 
 # Writing Skills
@@ -15,6 +15,7 @@ description: Create new agent skills with proper structure, progressive disclosu
 
 2. **Draft the skill** - create:
    - SKILL.md with concise instructions
+   - agents/openai.yaml when the skill will be listed in Codex UI
    - Additional reference files if content exceeds 500 lines
    - Utility scripts if deterministic operations needed
 
@@ -28,8 +29,9 @@ description: Create new agent skills with proper structure, progressive disclosu
 ```
 skill-name/
 ├── SKILL.md           # Main instructions (required)
-├── REFERENCE.md       # Detailed docs (if needed)
-├── EXAMPLES.md        # Usage examples (if needed)
+├── agents/
+│   └── openai.yaml    # UI metadata (recommended)
+├── references/        # Detailed docs (if needed)
 └── scripts/           # Utility scripts (if needed)
     └── helper.js
 ```
@@ -111,6 +113,7 @@ After drafting, verify:
 
 - [ ] Description includes triggers ("Use when...")
 - [ ] SKILL.md under 100 lines
+- [ ] Optional `agents/openai.yaml` matches the skill's current purpose
 - [ ] No time-sensitive info
 - [ ] Consistent terminology
 - [ ] Concrete examples included

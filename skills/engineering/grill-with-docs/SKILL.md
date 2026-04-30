@@ -15,6 +15,15 @@ If a question can be answered by exploring the codebase, explore the codebase in
 
 <supporting-info>
 
+## Codex operating mode
+
+- Use local code search, file reads, and tests to answer repo-grounded questions before asking the user.
+- Use `apply_patch` for documentation edits.
+- Respect dirty worktrees and never overwrite unrelated user changes.
+- Create `CONTEXT.md` and ADR files lazily, only when a term or decision is actually resolved.
+- Keep the conversation to one question plus one recommended answer at a time.
+- If the user asks for a written output instead of more interviewing, synthesize from the resolved context and stop grilling.
+
 ## Domain awareness
 
 During codebase exploration, also look for existing documentation:
