@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guided Code Review Tour"
+  short_description: "Guide reviewers through complex code changes"
+  default_prompt: "Use $guided-code-review-tour to map the best review path through this change."
