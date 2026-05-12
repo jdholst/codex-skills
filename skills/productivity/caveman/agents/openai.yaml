@@ -1,0 +1,4 @@
+interface:
+  display_name: "Caveman"
+  short_description: "Use ultra-compressed communication"
+  default_prompt: "Use $caveman to answer in a compact, low-token style while preserving technical accuracy."

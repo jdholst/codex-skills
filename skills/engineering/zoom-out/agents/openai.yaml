@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zoom Out"
+  short_description: "Explain code in broader system context"
+  default_prompt: "Use $zoom-out to explain this code path in the context of the whole system."

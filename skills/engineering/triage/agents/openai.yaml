@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage"
+  short_description: "Triage issues through role-based states"
+  default_prompt: "Use $triage to review and classify this issue with the repo's triage workflow."

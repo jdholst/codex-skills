@@ -1,6 +1,6 @@
 ---
 name: design-an-interface
-description: Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions "design it twice".
+description: Generate multiple radically different interface designs for a module using Codex subagents or separated design passes. Use when user wants to design an API, explore interface options, compare module shapes, or mentions "design it twice".
 ---
 
 # Design an Interface
@@ -23,7 +23,7 @@ Ask: "What does this module need to do? Who will use it?"
 
 ### 2. Generate Designs
 
-Produce 3+ radically different approaches. In Codex, use parallel subagents only when the user or environment explicitly permits subagent work; otherwise generate the designs yourself and keep each approach clearly separated.
+Produce 3+ radically different approaches. In Codex, prefer parallel subagents when the user or environment permits subagent work; otherwise generate the designs yourself and keep each approach clearly separated.
 
 ```
 Prompt template for each design:
@@ -88,7 +88,7 @@ From "A Philosophy of Software Design":
 
 ## Anti-Patterns
 
-- Don't let sub-agents produce similar designs - enforce radical difference
+- Don't let subagents or design passes converge too early - enforce radical difference
 - Don't skip comparison - the value is in contrast
 - Don't implement - this is purely about interface shape
 - Don't evaluate based on implementation effort

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Migrate To Shoehorn"
+  short_description: "Replace test assertions with shoehorn helpers"
+  default_prompt: "Use $migrate-to-shoehorn to migrate test type assertions to @total-typescript/shoehorn."

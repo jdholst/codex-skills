@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scaffold Exercises"
+  short_description: "Create exercise sections and solutions"
+  default_prompt: "Use $scaffold-exercises to generate the requested exercise structure."

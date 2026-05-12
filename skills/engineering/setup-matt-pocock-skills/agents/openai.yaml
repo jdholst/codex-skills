@@ -1,0 +1,4 @@
+interface:
+  display_name: "Setup Matt Pocock Skills"
+  short_description: "Configure repo docs for the skill workflow"
+  default_prompt: "Use $setup-matt-pocock-skills to configure this repo's issue tracker and agent docs."
