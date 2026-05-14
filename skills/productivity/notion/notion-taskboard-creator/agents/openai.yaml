@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Taskboard Creator"
+  short_description: "Create Notion taskboards and board views"
+  default_prompt: "Use $notion-taskboard-creator to create a Notion taskboard with the right schema, status order, views, and starter tasks."

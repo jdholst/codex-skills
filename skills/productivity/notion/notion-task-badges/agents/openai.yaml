@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Task Badges"
+  short_description: "Generate GitHub Markdown badges for Notion task links"
+  default_prompt: "Use $notion-task-badges to generate copy-ready Markdown badges for these Notion task links."

@@ -39,7 +39,7 @@ for DEST in "${DESTS[@]}"; do
   mkdir -p "$DEST"
 
   for bucket in "${PROMOTED_BUCKETS[@]}"; do
-    find "$bucket" -mindepth 2 -maxdepth 2 -name SKILL.md -print0
+    find "$bucket" -mindepth 2 -name SKILL.md -print0
   done |
   while IFS= read -r -d '' skill_md; do
     src="$(dirname "$skill_md")"

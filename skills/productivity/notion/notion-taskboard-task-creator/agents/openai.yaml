@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Taskboard Task Creator"
+  short_description: "Create well-shaped Notion task cards"
+  default_prompt: "Use $notion-taskboard-task-creator to create a task card on this Notion taskboard with properties, acceptance criteria, and QA steps."

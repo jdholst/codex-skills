@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Task QA Steps"
+  short_description: "Write manual QA steps for task cards"
+  default_prompt: "Use $notion-task-qa-steps to add manual QA steps to this Notion task card."

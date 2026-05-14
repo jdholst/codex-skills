@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion Research and Document"
+  short_description: "Research topics and publish Notion reports"
+  default_prompt: "Use $notion-research-and-document to research a topic and publish a source-linked report in Notion."
